@@ -40,8 +40,8 @@ jobs:
           Write-Host "使用上游 ref: $ref ($kind)"
           $out = Join-Path $env:RUNNER_TEMP 'upstream.zip'
           $urls = @(
-            "https://codeload.github.com/fish2018/webhtv/zip/refs/$kind/$ref",
-            "https://gh-proxy.com/https://github.com/fish2018/webhtv/archive/refs/$kind/$ref.zip"
+            "https://codeload.github.com/Silent1566/webhtv/zip/refs/$kind/$ref",
+            "https://gh-proxy.com/https://github.com/Silent1566/webhtv/archive/refs/$kind/$ref.zip"
           )
           foreach ($u in $urls) {
             Write-Host "尝试下载: $u"
